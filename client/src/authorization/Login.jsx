@@ -4,7 +4,9 @@ import Button1 from "../components/Button1";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const { loginUser, isAuthenticated, isLoading } = useAuth();
+  const { loginUser, isAuthenticated } = useAuth();
+
+  console.log(isAuthenticated);
 
   const navigate = useNavigate();
 
@@ -20,8 +22,8 @@ const Login = () => {
     loginUser(email, password);
   };
   useEffect(() => {
-    if (isAuthenticated && isLoading) navigate("/home", { replace: true });
-  }, [isAuthenticated, isLoading, navigate]);
+    if (isAuthenticated) navigate("/", { replace: true });
+  }, [isAuthenticated, navigate]);
   return (
     <div className="login">
       <form onSubmit={handleSubmit}>

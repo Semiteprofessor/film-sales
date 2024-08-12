@@ -13,6 +13,7 @@ import MovieDetails from "../components/MovieDetails";
 import WatchedSummary from "../components/WatchedSummary";
 import WatchedMoviesList from "../components/WatchedMoviesList";
 import Notification from "../components/Notification";
+import Auth from "../components/Auth";
 
 export const average = (arr) => {
   return arr.reduce((a, b) => a + b, 0) / arr.length;
@@ -111,6 +112,7 @@ const Landing = () => {
         <Logo />
         <Search query={query} setQuery={setQuery} />
         <Result movies={movies} />
+        <Auth />
       </NavBar>
       <Main>
         {/* <Box> {isLoading ? <Loader /> : <MovieList movies={movies} />}</Box> */}

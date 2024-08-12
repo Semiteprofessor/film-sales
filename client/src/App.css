@@ -375,6 +375,9 @@ section {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .login form .container {
@@ -393,4 +396,17 @@ section {
   padding: 20px 16px 20px 16px;
   outline: none;
   width: 400px;
+}
+
+.auth ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.auth ul li {
+  list-style: none;
+  color: #fff;
+  font-weight: 500;
 }

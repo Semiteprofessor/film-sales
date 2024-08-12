@@ -84,7 +84,7 @@ const Signup = () => {
             className="inputs"
           />
         </div>
-        <Button1>Login</Button1>
+        <Button1>Sign up</Button1>
         <p>
           Already have an account? <Link to="/login">Sign In</Link>
         </p>
